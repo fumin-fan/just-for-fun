@@ -3,7 +3,26 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<style type="text/css">
+			#present{
+				line-height: 50px;
+				vertical-align: middle;
+				border: 1px solid black;
+				width: 100px;
+				text-align: center;
+			}
+		</style>
+		
 	</head>
 	<body>
+		<div id="present">
+			礼物
+		</div>
+		<script type="text/javascript">
+			var present = document.getElementById('present');
+			present.addEventListener('click', function(){
+				alert('生日快乐，照顾好自己哦');
+			}, false);
+		</script>
 	</body>
 </html>
